@@ -1,0 +1,289 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+		<!--<meta name="viewport" content="width=320px"/>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+
+	</head>
+	<body>
+        <div class="loading">
+            <img src="img/loading.gif">
+        </div>
+		<div class="marca">
+			<img src="img/logo.png">			
+		</div>			
+		<div id="menu">	
+			<div class="secao" id="secao1">	
+				<a href="#" id="link-secao" onclick="Abre(1)">			
+					<div class="botao">						
+						<h2>Sobre Mim</h2>
+						<a href="#" onclick="Abre(0)">
+							<div class="voltar">
+								voltar
+							</div>
+						</a>
+					</div>	
+				</a>								
+			</div>
+			<div class="secao" id="secao2">	
+				<a href="#" id="link-secao" onclick="Abre(2)">			
+					<div class="botao">						
+						<h2>Trabalhos</h2>
+						<a href="#" onclick="Abre(0)">
+							<div class="voltar">
+								voltar
+							</div>
+						</a>
+					</div>	
+				</a>								
+			</div>
+			<div class="secao" id="secao3">				
+				<a href="#" id="link-secao" onclick="Abre(3)">
+					<div class="botao">
+						<h2>Contato</h2>	
+						<a href="#" onclick="Abre(0)">
+							<div class="voltar">
+								voltar
+							</div>
+						</a>
+					</div>					
+				</a>
+			</div>
+            
+            <div class="rodape">Desenvolvido por Paulo Fernandes - 2017</div>
+                
+		</div>
+		
+		<div class="conteudo-sobre" id="conteudo-sobre">
+			<div class="texto">
+				<h1>Paulo Fernandes Daniel <img src="img/space_invader.png"></h1>
+				<p>	
+					29 anos - Belo Horizonte/MG<br><br>
+					
+					Olá! Meu nome é Paulo e eu adoro tecnologia, design, hardware, jogos e computadores antigos.<br><br>
+
+                    Sou formado em Design Gráfico e, desde 2012, atuo como designer UI de apps mobile e web. Atualmente, estou cursando o 5º período de Ciência da Computação. 
+
+				</p>
+                
+                ---
+                <h2>Objetivo</h2>
+				<p>	Por ter um perfil multidisciplinar e voltado para tecnologia, posso contribuir em funções que necessitem de conhecimentos de mais de uma das minhas áreas de formação ao mesmo tempo.<br><br>
+                 
+                Acredito que isto agrega valor a mim, como profissional, e ao resultado, pois permite que eu contribua com uma visão mais ampla do produto, desde a parte de ideação, escolha de tecnologia, implementação e testes.
+				</p>
+				---
+                <h2>Formação Acadêmica</h2>
+				<p>	
+                    <span class="destaque">Bacharelado em Ciência da Computação</span> | 2016 - Atualmente<br>
+					Universidade FUMEC<br><br>
+
+					<span class="destaque">Bacharelado em Design Gráfico</span> | 2010-2013<br>
+					Universidade do Estado de Minas Gerais<br><br>
+                    
+                    <span class="destaque">Médio com Técnico em Eletrônica</span> | 2004-2006<br>
+					Colégio Técnico da UFMG<br>					
+				</p>                
+				---
+                <h2>Competências</h2>
+				<p>
+					<span class="destaque">Desenvolvimento</span><br>
+					Conhecimento de linguagens e lógica de programação (Java e C#). Linguagens e frameworks para front-end como HTML, CSS, Jquery e bootstrap, além de conceitos importantes como design patterns, design responsivo e material design.
+                    <br><br>                  
+                    
+                    <span class="destaque">UI/UX</span><br>
+					Análise de casos de uso, estudos e testes de usabilidade e experiência de usuário, desenvolvimento de interfaces de sistemas desde a prototipagem até a finalização de layouts.<br><br>
+
+					<span class="destaque">Eletrônica e Hardware</span><br>
+					Desenvolvimento em Arduino, conhecimento de circuitos analógicos e digitais, desenho de PCB e prototipagem.<br><br>
+                    
+					<span class="destaque">Design Gráfico</span><br>
+					Modelagem 3D, desenvolvimento de identidade visual, peças de comunicação, embalagens e motion graphics.<br><br>
+                    
+ 					<span class="destaque">Idiomas</span><br>
+					Inglês intermediário. Boa leitura e compreensão de fala.             
+				</p>
+                ---
+				<h2>Linguagens e ferramentas</h2>
+                
+                <div class="tipo-habilidade">	
+					<span class="destaque">Programação</span>
+                    
+                    <div class="habilidade">
+                        <div class="titulo">Java</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="java">
+                                <div class="valor-habilidade">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">C#</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="c">
+                                <div class="valor-habilidade">50%</div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            
+				<div class="tipo-habilidade">	
+					<span class="destaque">WEB</span>
+                    
+                    <div class="habilidade">
+                        <div class="titulo">HTML</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="html">
+                                <div class="valor-habilidade">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">CSS</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="css">
+                                <div class="valor-habilidade">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">Jquery</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="jq">
+                                <div class="valor-habilidade">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tipo-habilidade">
+					<span class="destaque">Pacote Adobe</span>
+                    
+                    <div class="habilidade">
+                        <div class="titulo">Photoshop</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="photoshop">
+                                <div class="valor-habilidade">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">Illustrator</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="illustrator">
+                                <div class="valor-habilidade">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">Indesign</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="indesign">
+                                <div class="valor-habilidade">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">After Effects</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="after">
+                                <div class="valor-habilidade">60%</div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+                
+                
+				<div class="tipo-habilidade">	
+					<span class="destaque">Games</span>
+                    
+                    <div class="habilidade">
+                        <div class="titulo">Unity (C#)</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="unity">
+                                <div class="valor-habilidade">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidade">
+                        <div class="titulo">Modelagem 3d (3dsMax)</div>
+                        <div class="valor-total">
+                            <div class="barra-valor-habilidade" id="3d">
+                                <div class="valor-habilidade">70%</div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div><br>
+                ---
+                <h2>Prêmios</h2>
+                <div class="tipo-habilidade ultima-habilidade">
+                    <p>	
+                        <span class="destaque">Colaborador do Ano</span> | 2017<br>
+                        Paiva Piovesan Softwares<br><br>
+                        <span class="destaque">Prêmio Inovação - 2º Lugar</span> | 2015<br>
+                        Paiva Piovesan Softwares<br><br>
+                    </p>
+                </div>                
+			</div>
+		</div>
+		
+		<div class="conteudo-trabalhos" id="conteudo-trabalhos">
+            <div class="para-cima">
+				<a href="#" onclick="Move(1)">
+                    <img src="img/scroll_cima.png">
+                </a>
+			</div>
+			<div class="item">
+				<img id="imagem2" src="">
+				<img id="imagem1" src="">
+				<div class="cabecalho-foto">
+					<h1></h1>
+					<h2></h2>
+					<div class="saiba-mais">
+						<a class="link-saiba-mais" target="_blank" href="#">
+							<span class="saiba-mais-texto">Ver Mais</span>
+							<img class="seta-mais" src="img/seta_mais.png">
+						</a>
+					</div>
+				</div>				
+			</div>
+			<div class="para-baixo">
+                <a href="#" onclick="Move(0)">
+				    <img src="img/scroll_baixo.png">
+                </a>
+			</div>
+		</div>        
+        
+        <div class="conteudo-trabalhos-mobile" id="conteudo-trabalhos-mobile"></div>
+		
+		<div class="conteudo-contato" id="conteudo-contato">
+			<div class="texto">
+				<h1>Paulo Fernandes Daniel</h1>
+				<p>	
+					pfdtalk@gmail.com<br>
+					+55 (31) 9 9180-8163<br><br>
+					
+                    <a href="http://github.com/paulofdaniel" target="_blank">- Github</a><br>
+                    <a href="http://www.behance.net/paulofdaniel" target="_blank">- Behance</a><br>			
+					<a href="http://facebook.com/paulofdaniel" target="_blank">- Facebook</a><br>
+					<a href="http://www.instagram.com/paulofdaniel" target="_blank">- Instagram</a><br>
+					<a href="http://www.linkedin.com/in/paulofdaniel" target="_blank">- LinkedIn</a><br>
+						
+				</p>
+			</div>			
+		</div>
+		
+		<div class="voltar-mobile">
+			<a href="#" onclick="Abre(0)"> Voltar</a>
+		</div>            
+		
+        <div class="preload" id="preload"> 
+        </div>
+		
+	</body>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/comp.js"></script>
+<html>

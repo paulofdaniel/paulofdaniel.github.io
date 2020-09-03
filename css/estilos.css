@@ -1,0 +1,366 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100%;    
+    font-family: 'Open Sans', sans-serif;	
+    overflow-x: hidden;
+    background-color: #222;
+    transition: all .4s;		
+    transition-delay: .5s;    
+}
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    text-align: center;
+}
+.loading img{
+    margin: 45vh auto;
+    width: 60px;
+    height: auto;
+}
+.marca{
+    width: 18%;
+    position: fixed;
+    margin: 40px;
+}
+.marca img{
+    width: 100%;
+    max-width: 205px;
+}
+.secao{
+    width:calc(100%/3);
+    height:100%;
+    float: left;
+    transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;	
+}
+.secao h2{
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: uppercase; /*uppercase*/
+    color: white;
+    font-weight: 700; /*300*/
+    float: left;
+    margin: 15px 0 0 50px;
+    transition: all 400ms;
+}
+#secao3 .botao{
+    border-right: none;
+}
+.botao{
+    position: fixed;
+    width: 90%;
+    height: 70px;
+    margin: 45vh 0 0 40px;	
+    border-left: 1px solid rgba(255,255,255,1);
+}
+.botao:hover h2{
+    margin: 15px 0 0 60px;
+    text-decoration: underline;
+}
+#link-secao{
+    text-align: center;
+    transition-delay: .2s;
+}
+.voltar{
+    color: white;
+    position: fixed;
+    display: none;
+    float: left;
+    margin: 40px 0 0 20px;
+}
+.voltar:hover{
+    text-decoration: underline;
+}
+#conteudo-sobre{
+    display: none;
+}
+#conteudo-trabalhos{
+    display: none;
+}
+#conteudo-contato{
+    display: none;
+}
+.conteudo-sobre{
+    position: absolute;
+    width: calc(100%/12*5);
+    font-size: 20px;
+    font-weight: 300;
+    color: white;	
+    margin: 10vh calc(100%/12) 0 25%;
+}
+.conteudo-trabalhos{
+    position: absolute;
+    width: 100%;
+}
+.conteudo-contato{
+    position: absolute;
+    width: calc(100%/12*5);
+    font-size: 22px;
+    font-weight: 300;
+    color: white;	
+    margin: 30vh calc(100%/12) 150px 25%;
+}
+.texto{
+    font-size: 16px;
+    font-weight: 300;
+}
+.texto p{
+    color: #ccc;
+}
+.texto h1{
+    color: #eee;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.texto h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.texto a{
+    text-decoration: underline;
+    color: white;
+}
+.tipo-habilidade{
+    position: relative;
+    margin-top: 30px;
+}
+.destaque{
+    color: #ddd;
+    font-weight: 700;
+}
+.conteudo-trabalhos-mobile{
+    display: none;
+}  
+.item{
+    position: absolute;	
+    margin: 15vh calc(100%/12*2) 0 calc(100%/12*5);
+}
+.cabecalho-foto{
+    position: fixed;
+    width: calc(100%/12*3);
+    margin: 80px 0 0 calc(-100%/12*2);
+    background-color: #fff;
+}
+.cabecalho-foto h1{
+    position: relative;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 10px 0 0 20px;
+}
+.cabecalho-foto h2{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: -5px 20px 20px 20px;
+}
+.saiba-mais{
+    position: relative;
+    float: right;
+    margin: 20px 20px 20px 0;
+}
+.saiba-mais-texto{
+    position: absolute;
+}
+.saiba-mais .seta-mais{
+    position: relative;
+    margin: 20px 0;
+    transition: .2s;
+}
+.saiba-mais:hover .seta-mais{
+    position: relative;
+    margin: 20px 5px;
+    transition: .2s;
+}
+.saiba-mais a{
+    position: fixed;
+    margin: -28px 0 0 -80px;
+    text-decoration: none;
+    color: #000;
+}
+.item>img{
+    position: fixed;
+    z-index:-999;
+    width: calc(100%/12*5);	
+}
+.para-baixo{
+    position: fixed;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    bottom: 4vh;
+    text-align: center;
+}
+.para-baixo img{
+    margin: 10px 20px -20px 20px;
+    text-align: center;
+}
+.para-cima{
+    position: fixed;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    top: 2vh;
+    text-align: center;
+}
+.para-cima img{
+    margin: 10px 20px -20px 20px;
+    text-align: center;
+}
+.preload{
+    display: none;
+}
+.voltar-mobile{
+    display: none;
+}    
+.rodape{
+    bottom: 5px;
+    font-size: 12px;
+    color: #ddd;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+.habilidade{
+    width: 100%;
+    max-width: 440px;
+    margin: 10px 0;
+}
+.habilidade .titulo{
+    font-size: 13px;
+    color: #ddd;
+}
+.valor-total{
+    border: 1px solid #ddd;
+    margin-top: 5px;   
+    width: 100%;
+}
+.barra-valor-habilidade{    
+    background-color: #ddd;
+    width: 10%;
+}
+.valor-habilidade{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+.ultima-habilidade{
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .loading{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 9999;
+        text-align: center;
+    }
+    .loading img{
+        margin: 32vh auto;
+    }
+    .secao{
+        width:100%;
+        height:15vh;
+        float: bottom !important;    
+    }
+    .marca{
+        width: 100%;
+        position: fixed;
+        margin: 40px;
+    }
+    .conteudo-sobre{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 60px 20px;
+        width: calc((100%/12)*10);
+    }
+    .conteudo-contato{
+        position: absolute;	
+        font-size: 22px;
+        font-weight: 300;
+        margin: 60px 20px;
+        background-color: #222;
+        width: calc((100%/12)*10);
+    }    
+    .texto h2{
+        font-size: 18px;
+    }    
+    .conteudo-trabalhos{
+        display: none;
+    }    
+    .conteudo-trabalhos-mobile{
+        position: absolute;
+    }    
+    .item-mobile{
+        position:static;
+        width: calc(100% - 40px);
+        margin: 50px 20px 0 20px;
+        float: bottom;
+    }    
+    .item-mobile > img{
+        width: 100%;
+    }    
+    .descricao{
+        width: calc(100% - 30px);
+        background-color: white;  
+        padding: 15px;
+    }    
+    .descricao-titulo{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: black;        
+    }    
+    .descricao-texto{
+        font-size: 16px;
+        font-weight: 300;
+        color: #444;        
+    }
+    .link-mobile{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        padding: 10px 0 0 0;
+        text-align: right;
+    }    
+    .link-mobile a{
+        text-decoration: none;
+    }
+    .para-baixo{
+        display: none;
+    }
+    .preload{
+        display: none;
+    }
+    .voltar-mobile{	
+        display: none;
+        width: 100%;
+        height: 30px;
+        position: fixed;
+        margin: 0 0 20px 20px;
+        padding: 10px 0 10px 0;
+        background-color: #222;	
+    }
+    .voltar-mobile a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
